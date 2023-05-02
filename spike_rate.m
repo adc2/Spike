@@ -1,0 +1,1 @@
+function rate = spike_rate(spikes)%rate = spike_rate(spikes) - discharge rate of spike train%% rate: discharge rate (spikes/s)%% spikes: spike times%T = max(spikes);rate = numel(spikes) / T;if nargout==0    disp(['spikes/s: ', num2str(rate)]);    clear rateend
